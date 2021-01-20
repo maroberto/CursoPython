@@ -2,15 +2,16 @@ import vlc
 import time
 
 
-music_name = 'audio/tracychapman.mp3'
-player = vlc.MediaPlayer(music_name)
+media = vlc.MediaPlayer('audio/tracychapman.mp3')
+#  music_name = 'audio/tracychapman.mp3'
 
-player.play()
+
+media.play()
 
 time.sleep(256)
 
 
-while player.is_plaing():
+while media.is_plaing():
     print('A musica ainda está tocando')
 
 print('A música parou de tocar')
