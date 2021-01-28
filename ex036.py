@@ -1,5 +1,4 @@
 from time import sleep
-import PySimpleGUI as sg 
 
 
 # imputs do valor do imovel, salario e anos para pagar
@@ -48,7 +47,6 @@ quer_imprimir = str(
     input('Quer imprimir a tabela de amortização(sim ou não)? '))
 
 
-
 if quer_imprimir.title() == ('Sim'):
     print('Gerando relatório....\n')
     sleep(3)
@@ -62,4 +60,4 @@ if quer_imprimir.title() == ('Sim'):
         print(
             parcela, '\033[34m{:.2f}\033[m / \033[35m{:.2f}\033[m / \033[35m{:.2f}\033[m / \033[36m{:.2f}\033[m'.format(saldo_devedor, juros_pago, amortizacao, prestacao))
 else:
-    sg.Print('Obrigado por fazer sua simulação!')
+    print('Obrigado por fazer sua simulação!')
