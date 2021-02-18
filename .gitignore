@@ -114,6 +114,7 @@ env.bak/
 venv.bak/
 exer
 .idea/
+.vscode
 
 # Spyder project settings
 .spyderproject
