@@ -1,3 +1,4 @@
 # Números pares
-for i in range(0, 52, 2):
-    print(i)
+for i in range(2, 51, 2):
+    print(i, end=' ')
+print('Acabou')

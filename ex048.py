@@ -1,14 +1,8 @@
-contagem = 0
-for i in range(1, 500, 2):
-    # de = 3
-    # multiplo = (de * i)
-    # natural = (multiplo / de)
-    # numero = (i % 3) == 0
-    soma = i
-    if (i % 3) == 0:
-        resultado = soma + i
-        contagem = contagem + 1
-        print(i, contagem, resultado)
-
-    # print(numero, i, contagem)
-    # print('{}   > {} X {} = {} / {} = {}'.format(contagem, de, i, multiplo, int(natural), de))
+soma = 0
+cont = 0
+for i in range(1, 501, 2):
+    if i % 3 == 0:
+        print(i, end=' ')
+        cont += 1
+        soma += i
+print(f'\n\nA soma de todos os {cont} valores solicitados é {soma}!')
