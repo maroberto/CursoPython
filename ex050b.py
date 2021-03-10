@@ -1,8 +1,9 @@
 s = 0
-for i in range(0, 6):
-    numeros = int(input('Digite um Número: '))
+cont = 0
+for i in range(1, 7):
+    numeros = int(input('Digite o {} valor: '.format(i)))
     if (numeros % 2) == 0:
         s += numeros
-        print('Resultado é {}'.format(s))
-    else:
-        print('Número impar não somado!')
+        cont += 1
+print(8 * '--=--')
+print(f'Você digitou {cont} números pares a a soma é {s}!')
