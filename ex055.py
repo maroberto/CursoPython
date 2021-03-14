@@ -1,15 +1,14 @@
 pesos = []
 for i in range(0, 5):
-    peso = int(input('Digite seu peso: '))
+    peso = float(input(f'Peso da {i} pessoa: '))
     pesos.append(peso)
-print(pesos)
+print(20 * ('__'))
 
 n1 = pesos[0]
 n2 = pesos[1]
 n3 = pesos[2]
 n4 = pesos[3]
 n5 = pesos[4]
-print(n1, n2, n3, n4, n5)
 
 maior = n1
 menor = n1
@@ -31,4 +30,5 @@ if n4 > n1 and n4 > n2 and n4 > n3 and n4 > n5:
     maior = n4
 if n5 > n1 and n5 > n2 and n5 > n3 and n5 > n4:
     maior = n5
-print(menor, maior)
+print(f'O maior peso lido foi {maior}kg')
+print(f'O menor peso lido foi {menor}kg')

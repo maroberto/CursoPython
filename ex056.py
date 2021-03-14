@@ -6,11 +6,12 @@ total_mulher_20 = 0
 
 
 for p in range(1, 5):
-    print('_____ {}ª Pessoa _____'.format(p))
-    nome = str(input('Nome: ')).split()
-    idade = int(input('Idade: '))
-    sexo = str(input('Sexo [M/F]: ')).split()
+    print(f'_____ {p}ª Pessoa _____')
+    nome = str(input('Nome: ')).strip()
+    idade = int(input('Idade: ')) 
+    sexo = str(input('Sexo [M/F]: ')).strip()
     soma_idade += idade
+    # verifica o mais velho e mais novo
     if p == 1 and sexo in 'Mm':
         maior_idade_homem = idade
         nome_velho = nome

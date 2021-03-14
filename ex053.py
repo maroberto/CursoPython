@@ -1,15 +1,20 @@
-frase = str(input('Digite uma frase: '))
-print(' Você digitou: {}'.format(frase))
+# retira espacos e transforma em maiuscula
+frase = str(input('Digite uma frase: ')).strip().upper()
+frase = frase.replace(' ', '')
+print(f'O inverso de {frase} é {frase[::-1]}')# inverte a string
 
-if frase.count(' '):
-    frase = frase.replace(' ', '')
-    string = frase[::-1] # inverte a string
-    print('A frase que você digitou invertida fica: {}'.format(string))
-    if frase == string:
-        print('É um palíndromo')
+if frase == frase[::-1]:
+    print('Temos um palíndromo')
+
+inverso = ''
+for letra in range(len(frase) -1, -1, -1):
+    inverso += frase[letra]
+if inverso == frase:
+    print('Temos um Palíndromo')
+else:
+    print('Não é um Palíndromo') 
 
 # anotaram a data da maratona
 # apos a sopa
 # a torre da derrota
-# o bolo ama o bolo
-# 
+# o lobo ama o bolo
