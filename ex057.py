@@ -1,4 +1,4 @@
 s = ' '
-while s != 'M' != 'F':
-    s = str(input('Digite seu sexo [M/F] ')).upper()
-print('Fim!')
+while s != 'F':
+    s = str(input('Digite seu sexo: ')).upper()
+print(s)
