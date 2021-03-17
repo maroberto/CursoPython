@@ -1,9 +1,6 @@
 num1 = float(input('Digite um número: '))
 num2 = float(input('Digite mais um número: '))
 
-
-
-
 print(10 * '__')
 print('[1]Somar')
 print('[2]Multiplicar')
@@ -15,6 +12,7 @@ print(10 * '__')
 op = 0
 while op != 5:
     op = int(input('Qual é sua opção: '))
+
     soma = num1 + num2
     mult = num1 * num2
     if op == 4:
