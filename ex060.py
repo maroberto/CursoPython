@@ -1,10 +1,16 @@
-num = int(input('Digite um número: '))
-contador = num
-while contador != 0:
-    fatorial = num * (contador - 1) 
-    resultado = fatorial * contador - 1
-    # contador = contador - 1
-    # resultado = num * contador
-    # resultado2 = resultado * (contador - 1)
-    # print(contador,num, resultado, resultado2)
-    print(fatorial, resultado)
+# from math import factorial
+
+
+# num = int(input('Digite um número: '))
+# print(factorial(num))
+
+n = int(input('Digite um numero para calcular seu fatorial: '))
+c = n
+f = 1
+print(f'Calculando {n}!', end=' = ')
+while c > 0:
+    print(f'{c}', end='')
+    print(' X ' if c > 1 else ' = ', end=' ')
+    f *= c
+    c -= 1
+print(f'{f}')
